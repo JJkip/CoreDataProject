@@ -7,12 +7,15 @@
 
 import SwiftUI
 
+struct Student: Hashable {
+    let name: String
+}
+
 struct ContentView: View {
+    let students = [Student(name: "Larry Kiplang"), Student(name: "Alice Maua"), Student(name: "Faith Atieno"), Student(name: "John Kamau")]
     var body: some View {
-        List {
-            ForEach([2,4,6,8,10], id: \.self) {
-                Text("\($0) is even")
-            }
+        List(students, id: \.self) { student in
+            Text(student.name)
         }
     }
 }
