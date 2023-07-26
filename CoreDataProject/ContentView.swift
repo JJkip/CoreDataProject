@@ -12,6 +12,8 @@ struct Student: Hashable {
 }
 
 struct ContentView: View {
+    @Environment(\.managedObjectContext) var moc
+    
     let students = [Student(name: "Larry Kiplang"), Student(name: "Alice Maua"), Student(name: "Faith Atieno"), Student(name: "John Kamau")]
     var body: some View {
         VStack {
@@ -23,6 +25,11 @@ struct ContentView: View {
             
             List(students, id: \.self) { student in
                 Text(student.name)
+            }
+            Button("Save") {
+                if moc.hasChanges {
+                    try? moc.save()
+                }
             }
         }
     }
