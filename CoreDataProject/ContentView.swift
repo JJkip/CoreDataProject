@@ -13,10 +13,27 @@ struct Student: Hashable {
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) var moc
+
+    @FetchRequest(sortDescriptors: []) var wizards: FetchedResults<Wizard>
     
     let students = [Student(name: "Larry Kiplang"), Student(name: "Alice Maua"), Student(name: "Faith Atieno"), Student(name: "John Kamau")]
     var body: some View {
         VStack {
+            List (wizards, id: \.self){ wizard in
+                Text(wizard.name ?? "Unkown")
+            }
+            Button("Add") {
+                let wizard = Wizard(context: moc)
+                wizard.name = "John Doe"
+            }
+            Button("Save") {
+                do {
+                    try moc.save()
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+            /*
             List {
                 ForEach([2, 4, 6, 8, 10], id: \.self) {
                     Text("\($0) is even")
@@ -31,6 +48,7 @@ struct ContentView: View {
                     try? moc.save()
                 }
             }
+             */
         }
     }
 }
