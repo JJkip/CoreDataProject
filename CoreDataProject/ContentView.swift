@@ -14,9 +14,7 @@ struct Student: Hashable {
 struct ContentView: View {
     @Environment(\.managedObjectContext) var moc
 
-    @FetchRequest(sortDescriptors: []) var wizards: FetchedResults<Wizard>
-    
-    @FetchRequest(sortDescriptors: []) var ships: FetchedResults<Ship>
+    @FetchRequest(sortDescriptors: [], predicate: NSPredicate(format: "NOT name BEGINSWITH[c] %@", "e")) var ships: FetchedResults<Ship>
     
     let students = [Student(name: "Larry Kiplang"), Student(name: "Alice Maua"), Student(name: "Faith Atieno"), Student(name: "John Kamau")]
     var body: some View {

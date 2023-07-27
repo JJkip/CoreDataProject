@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DD07DFCA2A70629800EA5AB0 /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07DFC82A70629800EA5AB0 /* Movie+CoreDataClass.swift */; };
-		DD07DFCB2A70629800EA5AB0 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07DFC92A70629800EA5AB0 /* Movie+CoreDataProperties.swift */; };
 		DD9DE0552A6F13D000F29A46 /* CoreDataProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DE0542A6F13D000F29A46 /* CoreDataProjectApp.swift */; };
 		DD9DE0572A6F13D000F29A46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DE0562A6F13D000F29A46 /* ContentView.swift */; };
 		DD9DE0592A6F13D300F29A46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD9DE0582A6F13D300F29A46 /* Assets.xcassets */; };
@@ -18,8 +16,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DD07DFC82A70629800EA5AB0 /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		DD07DFC92A70629800EA5AB0 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		DD9DE0512A6F13D000F29A46 /* CoreDataProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9DE0542A6F13D000F29A46 /* CoreDataProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectApp.swift; sourceTree = "<group>"; };
 		DD9DE0562A6F13D000F29A46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,8 +55,6 @@
 		DD9DE0532A6F13D000F29A46 /* CoreDataProject */ = {
 			isa = PBXGroup;
 			children = (
-				DD07DFC82A70629800EA5AB0 /* Movie+CoreDataClass.swift */,
-				DD07DFC92A70629800EA5AB0 /* Movie+CoreDataProperties.swift */,
 				DD9DE0542A6F13D000F29A46 /* CoreDataProjectApp.swift */,
 				DD9DE0562A6F13D000F29A46 /* ContentView.swift */,
 				DD9DE0582A6F13D300F29A46 /* Assets.xcassets */,
@@ -152,8 +146,6 @@
 				DD9DE0632A6F146A00F29A46 /* DataConroller.swift in Sources */,
 				DD9DE0572A6F13D000F29A46 /* ContentView.swift in Sources */,
 				DD9DE0662A6F148300F29A46 /* CoreDataProject.xcdatamodeld in Sources */,
-				DD07DFCA2A70629800EA5AB0 /* Movie+CoreDataClass.swift in Sources */,
-				DD07DFCB2A70629800EA5AB0 /* Movie+CoreDataProperties.swift in Sources */,
 				DD9DE0552A6F13D000F29A46 /* CoreDataProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
