@@ -4,7 +4,7 @@
 //
 //  Created by Joseph Langat on 24/07/2023.
 //
-
+import CoreData
 import SwiftUI
 
 struct Student: Hashable {
@@ -16,9 +16,35 @@ struct ContentView: View {
 
     @FetchRequest(sortDescriptors: []) var wizards: FetchedResults<Wizard>
     
+    @FetchRequest(sortDescriptors: []) var ships: FetchedResults<Ship>
+    
     let students = [Student(name: "Larry Kiplang"), Student(name: "Alice Maua"), Student(name: "Faith Atieno"), Student(name: "John Kamau")]
     var body: some View {
         VStack {
+            List(ships, id: \.self) { ship in
+                Text(ship.name ?? "Unknown name")
+            }
+
+            Button("Add Examples") {
+                let ship1 = Ship(context: moc)
+                ship1.name   = "Enterprise"
+                ship1.universe = "Star Trek"
+
+                let ship2 = Ship(context: moc)
+                ship2.name = "Defiant"
+                ship2.universe = "Star Trek"
+
+                let ship3 = Ship(context: moc)
+                ship3.name = "Millennium Falcon"
+                ship3.universe = "Star Wars"
+
+                let ship4 = Ship(context: moc)
+                ship4.name = "Executor"
+                ship4.universe = "Star Wars"
+
+                try? moc.save()
+            }
+            /*
             List (wizards, id: \.self){ wizard in
                 Text(wizard.name ?? "Unkown")
             }
@@ -33,6 +59,7 @@ struct ContentView: View {
                     print(error.localizedDescription)
                 }
             }
+             */
             /*
             List {
                 ForEach([2, 4, 6, 8, 10], id: \.self) {
