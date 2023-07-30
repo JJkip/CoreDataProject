@@ -13,7 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            
+            FilteredListView(filter: lastNameFilter)
             Button("Add Examples") {
                     let taylor = Singer(context: moc)
                     taylor.firstName = "Taylor"
