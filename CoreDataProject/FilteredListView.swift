@@ -4,18 +4,19 @@
 //
 //  Created by Joseph Langat on 30/07/2023.
 //
-
+import CoreData
 import SwiftUI
 
-struct FilteredListView: View {
-    @FetchRequest var fetchRequest: FetchedResults<Singer>
+struct FilteredListView<T: NSManagedObject, Content: View >: View{
+    @FetchRequest var fetchRequest: FetchedResults<T>
+    let content: (T) -> Content
     
     var body: some View {
-        List(fetchRequest, id:\.self){ singer in
-            Text("\(singer.wrappedFirstName) \(singer.wrappedLastName)")
+        List(fetchRequest, id:\.self){ item in
+            self.content(item)
         }
     }
-    init(filter: String) {
-        _fetchRequest = FetchRequest<Singer>(sortDescriptors: [], predicate: NSPredicate(format: "lastName BEGINSWITH %@", filter))
+    init(filterKey: String, filterValue: String, @ViewBuilder content: @escaping (T) -> Content) {
+        _fetchRequest = FetchRequest<T>(sortDescriptors: [], predicate: NSPredicate(format: "%k BEGINSWITH %@", filter))
     }
 }
