@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var lastNameFilter = "A"
     
     var body: some View {
+        /*
         VStack {
             FilteredListView(filterKey: "lastName", filterValue: lastNameFilter) { (singer: Singer) in
                 Text("\(singer.wrappedFirstName) \(singer.wrappedLastName)")
@@ -40,6 +41,7 @@ struct ContentView: View {
                     lastNameFilter = "S"
                 }
         }
+        */
     }
 }
 

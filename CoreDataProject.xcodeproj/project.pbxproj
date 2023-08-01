@@ -16,6 +16,10 @@
 		DD9DE05C2A6F13D300F29A46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD9DE05B2A6F13D300F29A46 /* Preview Assets.xcassets */; };
 		DD9DE0632A6F146A00F29A46 /* DataConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DE0622A6F146A00F29A46 /* DataConroller.swift */; };
 		DD9DE0662A6F148300F29A46 /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD9DE0642A6F148300F29A46 /* CoreDataProject.xcdatamodeld */; };
+		DDFB3C842A79986E0099B13E /* Country+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB3C802A79986E0099B13E /* Country+CoreDataClass.swift */; };
+		DDFB3C852A79986E0099B13E /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB3C812A79986E0099B13E /* Country+CoreDataProperties.swift */; };
+		DDFB3C862A79986E0099B13E /* Candy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB3C822A79986E0099B13E /* Candy+CoreDataClass.swift */; };
+		DDFB3C872A79986E0099B13E /* Candy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB3C832A79986E0099B13E /* Candy+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,10 @@
 		DD9DE05B2A6F13D300F29A46 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DD9DE0622A6F146A00F29A46 /* DataConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConroller.swift; sourceTree = "<group>"; };
 		DD9DE0652A6F148300F29A46 /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
+		DDFB3C802A79986E0099B13E /* Country+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DDFB3C812A79986E0099B13E /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DDFB3C822A79986E0099B13E /* Candy+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DDFB3C832A79986E0099B13E /* Candy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,10 @@
 		DD9DE0532A6F13D000F29A46 /* CoreDataProject */ = {
 			isa = PBXGroup;
 			children = (
+				DDFB3C802A79986E0099B13E /* Country+CoreDataClass.swift */,
+				DDFB3C812A79986E0099B13E /* Country+CoreDataProperties.swift */,
+				DDFB3C822A79986E0099B13E /* Candy+CoreDataClass.swift */,
+				DDFB3C832A79986E0099B13E /* Candy+CoreDataProperties.swift */,
 				DD07DFCC2A75A32100EA5AB0 /* Singer+CoreDataClass.swift */,
 				DD07DFCD2A75A32100EA5AB0 /* Singer+CoreDataProperties.swift */,
 				DD9DE0542A6F13D000F29A46 /* CoreDataProjectApp.swift */,
@@ -153,12 +165,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD9DE0632A6F146A00F29A46 /* DataConroller.swift in Sources */,
+				DDFB3C862A79986E0099B13E /* Candy+CoreDataClass.swift in Sources */,
+				DDFB3C872A79986E0099B13E /* Candy+CoreDataProperties.swift in Sources */,
 				DD07DFCF2A75A32100EA5AB0 /* Singer+CoreDataProperties.swift in Sources */,
 				DD9DE0572A6F13D000F29A46 /* ContentView.swift in Sources */,
 				DD07DFD12A76EFFF00EA5AB0 /* FilteredListView.swift in Sources */,
 				DD07DFCE2A75A32100EA5AB0 /* Singer+CoreDataClass.swift in Sources */,
 				DD9DE0662A6F148300F29A46 /* CoreDataProject.xcdatamodeld in Sources */,
+				DDFB3C842A79986E0099B13E /* Country+CoreDataClass.swift in Sources */,
 				DD9DE0552A6F13D000F29A46 /* CoreDataProjectApp.swift in Sources */,
+				DDFB3C852A79986E0099B13E /* Country+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
